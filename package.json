@@ -1,0 +1,23 @@
+{
+  "name": "daycare",
+  "version": "1.0.0",
+  "description": "Website for Jennifer Musselman Heath",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadtek/daycare.git"
+  },
+  "author": "Spencer Shattuck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadtek/daycare/issues"
+  },
+  "homepage": "https://github.com/shadtek/daycare#readme",
+  "dependencies": {
+    "express": "4.15.2"
+  }
+}
