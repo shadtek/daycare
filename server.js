@@ -1,16 +1,14 @@
 var express = require('express');
 
-// app setup
+var port = process.env.PORT || 8080;
 var app = express();
-var port = 8080;
 
-// setup the app middlware
-app.use(express.static('./public'));
+app.use(express.static(__dirname + '/public'));
 
 app.all('*', function(req, res, next) {
     res.sendFile('/public/index.html', { root: __dirname });
 });
 
-app.listen(port, function() {
-	console.log('Server up and running on port: ', port);
+app.listen(port, function(err){
+  console.log('connected at ', port);
 });
