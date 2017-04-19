@@ -3,13 +3,60 @@
 <head>
 	<title>Daycare</title>
   <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" media="screen,projection">
+  <!-- Import Google Icon Font -->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled Main CSS -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- Let browser know website is optimized for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-	<h1>Welcome to Daycare</h1>
-	<img src="http://img11.deviantart.net/3989/i/2016/167/1/1/uoplogocol2_by_stabrina-da6jj91.png">
+	<!-- <img src="http://img11.deviantart.net/3989/i/2016/167/1/1/uoplogocol2_by_stabrina-da6jj91.png"> -->
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" class="center brand-logo">
+        <img src="http://img11.deviantart.net/3989/i/2016/167/1/1/uoplogocol2_by_stabrina-da6jj91.png">
+      </a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#infants">Infants</a></li>
+        <li class="tab"><a href="#toddlers">Toddlers</a></li>
+        <li class="tab"><a href="#preschoolers">Preschoolers</a></li>
+        <li class="tab"><a href="#kindergarteners">Kindergarteners</a></li>
+        <li class="tab"><a href="#school-agers">School Agers</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="infants" class="col s12">Infants</div>
+  <div id="toddlers" class="col s12">Toddlers</div>
+  <div id="preschoolers" class="col s12">Preschoolers</div>
+  <div id="kindergarteners" class="col s12">Kindergarteners</div>
+  <div id="school-agers" class="col s12">School Agers</div>
+
+  <!-- Import jQuery before materialize.js -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <!-- Activate JS for this page -->
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $(".button-collapse").sideNav();
+        $('ul.tabs').tabs('select_tab', 'tab_id');
+      });
+  </script>
 </body>
 </html>
