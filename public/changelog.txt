@@ -1,0 +1,3 @@
+v1.0.1 (March 23rd, 2017)
+- Added Dark theme page with separate CSS
+- You can now have a galleryExpand without a gallery header
