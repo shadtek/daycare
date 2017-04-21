@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Once Upon A Preschool</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Standard Meta -->
@@ -24,26 +25,23 @@
     <meta name="twitter:image" content="media/store-front.jpg" />
     <meta name="twitter:url" content="https://dry-taiga-36448.herokuapp.com/" />
     <meta name="twitter:card" content="Once Upon A Preschool" />
-
-    <title>Gallery</title>
-
     <!-- Lato Font -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-
     <!-- Stylesheet -->
-    <link href="css/gallery-materialize.min.css" rel="stylesheet">
-
+    <link href="css/gallery-materialize.min.css" rel="stylesheet" type="text/css">
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Main CSS for Overrides -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
 
   <body>
 
     <!-- Navbar and Header -->
     <nav class="nav-extended">
-      <div class="nav-background">
-        <!-- <div class="pattern active" style="background-image: url('http://placehold.it/1400x300');"></div> -->
-      </div>
+      <!-- <div class="nav-background">
+        <div class="pattern active" style="background-image: url('http://placehold.it/1400x300');"></div>
+      </div> -->
       <div class="nav-wrapper container">
         <!-- <a href="index.html" class="brand-logo"><i class="material-icons">camera</i>Gallery</a> -->
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -74,7 +72,7 @@
       <div class="categories-wrapper purple lighten-1">
         <div class="categories-container">
           <ul class="categories container">
-            <li class="active"><a href="#all">Location & Hours</a></li>
+            <li class="active"><a href="#location">Location & Hours</a></li>
             <li><a href="#polygon">Classes</a></li>
             <li><a href="#bigbang">Pricing</a></li>
           </ul>
@@ -82,7 +80,7 @@
       </div>
     </nav>
     <ul class="side-nav" id="nav-mobile">
-      <li class="active"><a href="index.html"><i class="material-icons">camera</i>Gallery</a></li>
+      <li class="active"><a href="index.html"><i class="material-icons">home</i>Home</a></li>
       <li><a href="index-dark.html"><i class="material-icons">brightness_3</i>Dark Theme</a></li>
       <li><a href="blog.html"><i class="material-icons">edit</i>Blog</a></li>
       <li><a href="docs.html"><i class="material-icons">school</i>Docs</a></li>
@@ -91,11 +89,11 @@
       <li><a href="no-image.html"><i class="material-icons">texture</i>No Image Expand</a></li>
     </ul>
 
-    <!-- Gallery -->
+    <!-- Home -->
     <div id="portfolio" class="section gray">
       <div class="container">
         <div class="gallery row">
-          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter polygon">
+          <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter location">
             <div class="gallery-curve-wrapper">
               <a class="gallery-cover gray">
                 <img class="responsive-img" src="media/store-front.jpg" alt="Storefront">
