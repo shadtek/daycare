@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="daycare">
   <head>
+    <base href="/"></base>
     <title>Once Upon A Preschool</title>
+    <link rel="canonical" href="https://dry-taiga-36448.herokuapp.com/" />
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Jquery first -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -38,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
 
-  <body>
+  <body ng-controller="mainCtrl">
     <!-- Navbar and Header -->
     <nav class="nav-extended">
       <!-- <div class="nav-background">
@@ -94,6 +97,7 @@
       <li><a class="contact"><i class="material-icons">phone</i>Contact Us</a></li>
       <li><a href="https://www.tuitionexpress.com/" target="_blank"><i class="material-icons valign-wrapper"><img class="responsive-img" src="media/te-logo.png"></i>Tuition Express</a></li>
     </ul>
+    <ui-view></ui-view>
     <!-- Home -->
     <div id="portfolio" class="section gray">
       <div class="container">
@@ -587,11 +591,16 @@ Ea salvia adipisicing vegan man bun. Flexitarian cupidatat skateboard flannel. D
       });
     </script>
 
+    <!-- Angular -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+    <!-- Angular App -->
+    <script src='angular/app.js'></script>
+    <script src='angular/mainCtrl.js'></script>
     <!-- Core Javascript -->
     <script src="https://cdn.jsdelivr.net/materialize/0.98.1/js/materialize.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
-    
     <script src="js/color-thief.min.js"></script>
     <script src="js/galleryExpand.js"></script>
     <script src="js/init.js"></script>
