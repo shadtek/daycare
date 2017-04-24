@@ -4,12 +4,13 @@
     <title>Once Upon A Preschool</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Jquery first -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
     <!-- Standard Meta -->
     <meta name="description" content="Once Upon A Preschool" />
     <meta name="keywords" content="preschool, daycare" />
     <meta name="author" content="Spencer Shattuck" />
-    <!-- Mobile Browser Color for Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="AntiqueWhite">  
     <!-- Facebook Meta -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://dry-taiga-36448.herokuapp.com/" />
@@ -27,6 +28,8 @@
     <meta name="twitter:card" content="Once Upon A Preschool" />
     <!-- Lato Font -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <!-- Stylesheet -->
     <link href="css/gallery-materialize.min.css" rel="stylesheet" type="text/css">
     <!-- Material Icons -->
@@ -49,7 +52,7 @@
           <li><a href="index-dark.html">Pricing</a></li>
           <li><a href="blog.html">Food Menu</a></li>
           <li><a href="docs.html">Calendar</a></li>
-          <li><a href="blog.html">Contact Us</a></li>
+          <li><a class="contact">Contact Us</a></li>
           <li><a href="https://www.tuitionexpress.com/" target="_blank"><i class="material-icons valign-wrapper"><img class="responsive-img" src="media/te-logo.png"></i></a></li>
           <!-- <li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Features<i class="material-icons right">arrow_drop_down</i></a></li> -->
         </ul>
@@ -88,7 +91,7 @@
       <li><a href="index-dark.html"><i class="material-icons">attach_money</i>Pricing</a></li>
       <li><a href="blog.html"><i class="material-icons">restaurant_menu</i>Food Menu</a></li>
       <li><a href="docs.html"><i class="material-icons">school</i>About Us</a></li>
-      <li><a href="full-header.html"><i class="material-icons">contact_mail</i>Contact Us</a></li>
+      <li><a class="contact"><i class="material-icons">phone</i>Contact Us</a></li>
       <li><a href="https://www.tuitionexpress.com/" target="_blank"><i class="material-icons valign-wrapper"><img class="responsive-img" src="media/te-logo.png"></i>Tuition Express</a></li>
     </ul>
     <!-- Home -->
@@ -162,7 +165,7 @@
                 </div>
               </div>
               <div class="gallery-action">
-                <a class="btn-floating btn-large waves-effect waves-light red lighten-1" href="https://www.google.com/maps/place/2090+N+2000+W,+Ogden,+UT+84404" target="_blank"><i class="material-icons">place</i></a>
+                <a class="btn-floating btn-large waves-effect waves-light red lighten-1" href="https://www.google.com/maps/place/Once+Upon+A+Preschool" target="_blank"><i class="material-icons">place</i></a>
               </div>
             </div>
           </div>
@@ -557,15 +560,38 @@ Ea salvia adipisicing vegan man bun. Flexitarian cupidatat skateboard flannel. D
         </div>
 
       </div>
-
+  
     </div><!-- /.container -->
 
+    <div class="fixed-action-btn">
+      <a id="contact" class="waves-effect waves-light btn btn-floating"><i class="material-icons">phone</i></a>
+    </div>
+    <!-- Tap Target Structure -->
+    <div class="tap-target white" data-activates="contact">
+      <div class="tap-target-content right-align">
+        <h5>Contact us today:</h5>
+        <p><a href="tel:(801) 732-0659"><i class="material-icons">phone</i> (801) 732-0659</a></p>
+        <p><a href="mailto:info@onceuponapreschool.com"><i class="material-icons">email</i> info@onceuponapreschool.com</a></p>
+        <p><a href="https://www.google.com/maps/place/Once+Upon+A+Preschool" target="_blank"><i class="material-icons">place</i> 2090 North 2000 West, Farr West, UT 84404</a></p
+      </div>
+    </div>
+    <!-- Tap Target Script -->
+    <script>
+      $(document).ready(function(){
+        $( "#contact" ).click(function() {
+          $('.tap-target').tapTarget('open');
+        });
+        $( ".contact" ).click(function() {
+          $('.tap-target').tapTarget('open');
+        });
+      });
+    </script>
 
     <!-- Core Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/materialize/0.98.1/js/materialize.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/materialize/0.98.0/js/materialize.min.js"></script>
+    
     <script src="js/color-thief.min.js"></script>
     <script src="js/galleryExpand.js"></script>
     <script src="js/init.js"></script>
