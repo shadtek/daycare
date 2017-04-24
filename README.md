@@ -7,7 +7,7 @@ Logo: http://img11.deviantart.net/3989/i/2016/167/1/1/uoplogocol2_by_stabrina-da
 
 Stylus watcher: stylus -w -u nib css/main.styl -o css/main.css
 
-Angular Wireframe
+Angular Wireframe:
 Nav
 	Home
 		Logo
@@ -25,5 +25,5 @@ Nav
 		Table
 	Calendar
 		docs.html format with horizontal card style
-	Contact Us
-		Tap target http://materializecss.com/feature-discovery.html
+Contact Us
+	Tap target http://materializecss.com/feature-discovery.html
