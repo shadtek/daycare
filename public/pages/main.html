@@ -1,0 +1,68 @@
+<!-- Navbar and Header -->
+<nav class="nav-extended">
+  <!-- <div class="nav-background">
+    <div class="pattern active" style="background-image: url('http://placehold.it/1400x300');"></div>
+  </div> -->
+  <div class="nav-wrapper container">
+    <a href="index.html" >Once Upon a Preschool</a>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="index-dark.html">Pricing</a></li>
+      <li><a href="blog.html">Food Menu</a></li>
+      <li><a href="docs.html">Calendar</a></li>
+      <li><a class="contact">Contact Us</a></li>
+      <li><a href="https://www.tuitionexpress.com/" target="_blank"><i class="material-icons valign-wrapper"><img class="responsive-img" src="media/te-logo.png"></i></a></li>
+      <!-- <li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Features<i class="material-icons right">arrow_drop_down</i></a></li> -->
+    </ul>
+    <!-- Dropdown Structure -->
+    <!-- <ul id='feature-dropdown' class='dropdown-content'>
+      <li><a href="full-header.html">Fullscreen Header</a></li>
+      <li><a href="horizontal.html">Horizontal Style</a></li>
+      <li><a href="no-image.html">No Image Expand</a></li>
+    </ul> -->
+
+    <div class="nav-header center">
+      <div class="valign-wrapper white">
+        <img class="responsive-img" src="http://img11.deviantart.net/3989/i/2016/167/1/1/uoplogocol2_by_stabrina-da6jj91.png">
+      </div>          
+    </div>
+    <div class="nav-content center">
+      <div class="valign-wrapper">
+        <h3>Call now to reserve your place:<br><a href="tel:801-732-0659">801-732-0659</a></h3>
+      </div>          
+    </div>
+  </div>
+</nav>
+<ul class="side-nav" id="nav-mobile">
+  <li class="active"><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+  <li><a href="index-dark.html"><i class="material-icons">attach_money</i>Pricing</a></li>
+  <li><a href="blog.html"><i class="material-icons">restaurant_menu</i>Food Menu</a></li>
+  <li><a href="docs.html"><i class="material-icons">school</i>About Us</a></li>
+  <li><a class="contact"><i class="material-icons">phone</i>Contact Us</a></li>
+  <li><a href="https://www.tuitionexpress.com/" target="_blank"><i class="material-icons valign-wrapper"><img class="responsive-img" src="media/te-logo.png"></i>Tuition Express</a></li>
+</ul> 
+<ui-view></ui-view>
+<div class="fixed-action-btn">
+  <a id="contact" class="waves-effect waves-light btn btn-floating"><i class="material-icons">phone</i></a>
+</div>
+<!-- Tap Target Structure -->
+<div class="tap-target white" data-activates="contact">
+  <div class="tap-target-content right-align">
+    <h5>Contact us today:</h5>
+    <p><a href="tel:(801) 732-0659"><i class="material-icons">phone</i> (801) 732-0659</a></p>
+    <p><a href="mailto:info@onceuponapreschool.com"><i class="material-icons">email</i> info@onceuponapreschool.com</a></p>
+    <p><a href="https://www.google.com/maps/place/Once+Upon+A+Preschool" target="_blank"><i class="material-icons">place</i> 2090 North 2000 West, Farr West, UT 84404</a></p
+  </div>
+</div>
+<!-- Tap Target Script -->
+<script>
+  $(document).ready(function(){
+    $( "#contact" ).click(function() {
+      $('.tap-target').tapTarget('open');
+    });
+    $( ".contact" ).click(function() {
+      $('.tap-target').tapTarget('open');
+    });
+  });
+</script>
