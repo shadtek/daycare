@@ -27,3 +27,6 @@ Nav - main.html
 		docs.html format with horizontal card style
 Contact Us - main.html
 	Tap target http://materializecss.com/feature-discovery.html
+
+Sprints:
+Clean up all card title wrappers.
