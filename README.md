@@ -30,3 +30,4 @@ Contact Us - main.html
 
 Sprints:
 Clean up all card title wrappers.
+Images can be expanded.
