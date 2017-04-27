@@ -17,6 +17,12 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
       templateUrl: "pages/home.html"
     })
     // state;
+    // state
+    .state('main.pricing', {
+      url: "/pricing",
+      templateUrl: "pages/pricing.html"
+    })
+    // state;
 
     $locationProvider.html5Mode(true);
 
