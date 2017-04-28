@@ -23,6 +23,18 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
       templateUrl: "pages/pricing.html"
     })
     // state;
+    // state
+    .state('main.food-menu', {
+      url: "/food-menu",
+      templateUrl: "pages/food-menu.html"
+    })
+    // state;
+    // state
+    .state('main.calendar', {
+      url: "/calendar",
+      templateUrl: "pages/calendar.html"
+    })
+    // state;
 
     $locationProvider.html5Mode(true);
 
