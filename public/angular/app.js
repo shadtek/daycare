@@ -35,6 +35,13 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
       templateUrl: "pages/calendar.html"
     })
     // state;
+    // state
+    .state('main.admin', {
+      url: "/admin",
+      templateUrl: "pages/admin.html"
+    })
+    // state;
+
 
     $locationProvider.html5Mode(true);
 
