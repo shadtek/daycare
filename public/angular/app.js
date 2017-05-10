@@ -38,11 +38,12 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     // state
     .state('main.admin', {
       url: "/admin",
-      templateUrl: "pages/admin.html"
+      templateUrl: "pages/admin.html",
+      controller: "adminCtrl"
     })
     // state;
 
 
     $locationProvider.html5Mode(true);
 
-})
+});
